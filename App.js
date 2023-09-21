@@ -1,11 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button} from 'react-native';
 
 export default function App() {
+
+  const handleClick = () => {
+    console.log('Clicked!')
+  }
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text>YO YO!</Text>
+      <StatusBar style="auto" backgroundColor='#ff0000' translucent={true}/>
+      <Button title='Click Me' onPress={handleClick}/>
     </View>
   );
 }
